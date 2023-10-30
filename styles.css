@@ -1,0 +1,102 @@
+.nav-one {
+    display: flex;
+    color: rgb(88, 84, 68);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    background-color: white;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid rgb(157, 157, 157);
+    padding: 20px;
+}
+
+body {
+    background-color: rgb(228, 226, 218);
+    
+}
+
+a:hover {
+    
+    text-shadow: 1px 1px 3px rgba(83, 82, 82, 0.5);
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(115, 113, 108);
+    font-weight: 200;
+    
+}
+
+
+
+.logo {
+  flex-grow: .55;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+    
+.title {
+    flex-grow: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 55px;
+    align-self: flex-end;
+}
+
+.menu {
+    
+    gap: 1px;
+}
+
+
+.menu ul {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    list-style: none;
+    
+    
+}
+
+
+
+
+
+
+
+.description {
+    color: rgb(113, 113, 101);
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    
+    
+}
+
+
+.recipes {
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    
+    
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    border-top: 1px solid rgb(157, 157, 157);
+}
+
+  
