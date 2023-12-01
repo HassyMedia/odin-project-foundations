@@ -45,3 +45,14 @@ function playerChoice(playerSelection) {
     const computerSelection = getComputerChoice();
     playRound(playerSelection, computerSelection);
 }
+
+// Function to restart the game and reset scores
+function restartGame() {
+    playerScore = 0;
+    computerScore = 0;
+    updateScores();
+    document.getElementById("computer-choice").textContent = "Computer's Choice: ";
+    document.getElementById("round-result").textContent = "Round Result: ";
+    document.getElementById("winner").textContent = "Winner: ";
+}
+
