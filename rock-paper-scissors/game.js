@@ -56,3 +56,11 @@ function restartGame() {
     document.getElementById("winner").textContent = "Winner: ";
 }
 
+// Function to update the score display
+function updateScores() {
+    document.getElementById("player-score").textContent = playerScore;
+    document.getElementById("computer-score").textContent = computerScore;
+}
+
+// Initialize the game
+restartGame();
