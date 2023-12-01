@@ -1,0 +1,97 @@
+body {
+    font-family: 'Audiowide', sans-serif;
+    background-size: cover;
+    background-color: #000;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #game-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0ff;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #scoreboard, #choices, #round-info, #result {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #scoreboard p, #round-info p, #result p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  #choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #choices button {
+    background-color: #000;
+    color: #0ff;
+    border: 1px solid #0ff;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ff;
+    transition: all 0.3s;
+  }
+  
+  #choices button:hover {
+    background-color: #0ff;
+    color: #000;
+    box-shadow: 0 0 20px #0ff;
+  }
+  
+  #play-again-button {
+    background-color: #0ff;
+    color: black;
+    border: 1px solid #0ff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+  }
+  
+  #play-again-button:hover {
+    background-color: #08e;
+    color: white;
+  }
+  
+  footer {
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
