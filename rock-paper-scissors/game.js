@@ -8,3 +8,29 @@ function getComputerChoice() {
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
 }
+
+// Function to play a single round and update the result
+function playRound(playerSelection, computerSelection) {
+    document.getElementById("computer-choice").textContent = `Computer's Choice: ${capitalize(computerSelection)}`;
+    playerSelection = playerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
+
+    let result;
+    // Determine the result of the round
+    if (playerSelection === computerSelection) {
+        result = "It's a tie!";
+    } else if ((playerSelection === 'rock' && computerSelection === 'scissors') ||
+               (playerSelection === 'scissors' && computerSelection === 'paper') ||
+               (playerSelection === 'paper' && computerSelection === 'rock')) {
+        playerScore++;
+        result = `You Win! ${capitalize(playerSelection)} beats ${capitalize(computerSelection)}`;
+    } else {
+        computerScore++;
+        result = `You Lose! ${capitalize(computerSelection)} beats ${capitalize(playerSelection)}`;
+    }
+
+    // Update the round result and scores
+    document.getElementById("round-result").textContent = `Round Result: ${result}`;
+    updateScores();
+    return result;
+}
