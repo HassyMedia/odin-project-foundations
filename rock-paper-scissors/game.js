@@ -34,3 +34,14 @@ function playRound(playerSelection, computerSelection) {
     updateScores();
     return result;
 }
+
+// Helper function to capitalize the first letter of a string
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Function called when player makes a choice
+function playerChoice(playerSelection) {
+    const computerSelection = getComputerChoice();
+    playRound(playerSelection, computerSelection);
+}
